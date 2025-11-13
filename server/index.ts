@@ -71,7 +71,7 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || '5000', 10);
-  const host = '127.0.0.1';   // force localhost
+  const host = '0.0.0.0';   // force localhost
   server.listen(port, host, () => {
   console.log(`Server running on http://${host}:${port}`);
 });
