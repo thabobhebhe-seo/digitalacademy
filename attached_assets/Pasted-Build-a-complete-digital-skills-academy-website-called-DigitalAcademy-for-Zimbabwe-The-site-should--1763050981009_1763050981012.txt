@@ -1,0 +1,148 @@
+Build a complete digital skills academy website called DigitalAcademy for Zimbabwe. The site should be fully functional with a professional college/university aesthetic.
+
+FRONT-END REQUIREMENTS (React):
+
+Home page with hero section, featured courses carousel, testimonials, 2026 enrollment banner with countdown timer, early bird discount highlight, and WhatsApp CTA
+
+Navigation bar with logo, menu (Home, Courses, About, Blog, Contact, Student Login), and "Enroll Now" button
+
+Courses listing page showing all courses in grid format with filtering by category (Digital Marketing, SEO, Coding, AI, etc.)
+
+Individual course pages with full details: syllabus, duration, fee in USD and ZWL, learning outcomes, instructor bio, student reviews, and enroll CTA
+
+About page with academy mission, credentials, why digital skills matter in Zimbabwe, and team info
+
+Enrollment/registration form with fields: name, email, phone, course selection, payment method (Ecocash, PayNow, bank transfer, installments), terms acceptance
+
+Blog/News section with SEO-friendly articles on digital marketing trends, success stories, AI tips, career advice
+
+Contact page with form, FAQ, and WhatsApp integration link
+
+Testimonials/case studies page with student success stories, photos, and results
+
+Pricing page with course fee table (USD and ZWL), payment options, discounts
+
+Student portal login (basic: email/password, access enrolled courses, progress tracker, certificate download)
+
+Footer with links, social media, newsletter signup, accepted payment methods
+
+Mobile-first responsive design with modern, professional styling (use Tailwind CSS)
+
+WhatsApp floating button throughout site
+
+BACK-END REQUIREMENTS (Node.js/Express):
+
+User authentication system (register, login, password reset) with JWT tokens
+
+Course management API endpoints (GET all courses, GET single course, POST new course, UPDATE course, DELETE course)
+
+Enrollment management (POST student enrollment, GET student's enrolled courses, track progress)
+
+Payment processing webhook integration (ready for Stripe, PayNow, Ecocash)
+
+Blog/news API (GET articles, POST article, UPDATE, DELETE with admin auth)
+
+Testimonial management API
+
+Contact form submission endpoint with email notification
+
+Student progress tracking (lessons completed, quiz scores, certificate generation)
+
+Admin dashboard API (approve/reject new courses, manage subscriptions, view analytics)
+
+Email notification system (confirmation, reminders, newsletters)
+
+DATABASE (MongoDB or Firebase):
+
+Users collection: name, email, phone, password (hashed), role (student/instructor/admin), enrolled courses, payment history
+
+Courses collection: name, description, duration, fee USD, fee ZWL, category, syllabus, modules, instructor ID, reviews, created date
+
+Enrollments collection: student ID, course ID, enrollment date, progress %, completion status, certificate status
+
+Blog articles collection: title, content, author, published date, category, SEO keywords
+
+Testimonials collection: student name, text, photo URL, rating, course completed
+
+Payments collection: student ID, course ID, amount, currency, payment method, status, transaction ID
+
+Admin users collection: name, email, password (hashed), permissions
+
+SAMPLE DATA:
+Include at least 2 sample instructors, 5 full course entries (with syllabus), 10 testimonials, 5 blog articles, sample users.
+
+COURSES TO INCLUDE:
+
+Digital Marketing Basics ($49)
+
+Facebook & Google Ads ($79)
+
+SEO Mastery ($99)
+
+Content Monetization ($59)
+
+Vibe Coding/No-Code ($89)
+
+AI for Business ($79)
+
+Web Development Essentials ($129)
+
+Freelancing & Remote Work ($39)
+
+E-commerce Mastery ($89)
+
+WhatsApp Automation ($69)
+
+UI/UX FEATURES:
+
+Professional color scheme (deep blue/gold or teal/white for tech vibe)
+
+Clear typography, good contrast for accessibility
+
+Smooth animations and transitions
+
+Loading states and error handling
+
+Success/error message notifications
+
+Form validation with helpful error messages
+
+Mobile-optimized navigation (hamburger menu for small screens)
+
+SEO optimization (meta tags, Open Graph, structured data)
+
+SECURITY:
+
+Password hashing with bcryptjs
+
+JWT token authentication
+
+Input validation and sanitization
+
+CORS properly configured
+
+Environment variables for sensitive data (API keys, database URL, JWT secret)
+
+DEPLOYMENT:
+
+Ready to run on Replit with "npm start" or "node server.js"
+
+Include .env.example file with required variables
+
+Include clear README with setup instructions, how to test locally, and deployment steps
+
+Database connection string ready for MongoDB Atlas (free tier) or Firebase
+
+CODE STRUCTURE:
+
+client/ folder for React front-end with components, pages, services, hooks
+
+server/ folder for Express backend with routes, controllers, middleware, models
+
+Clear, commented code explaining logic
+
+Use Tailwind CSS for styling
+
+Modular, reusable components
+
+Generate the full project scaffold, all necessary files, folder structure, sample data, and provide step-by-step instructions for running locally and deploying on Replit.
